@@ -84,7 +84,6 @@ export class SearchKeywordManagerComponent implements OnInit {
   getData() {
     this.loading = true;
     console.log(environment.SERVER_URL + 'search/result');
-    // this.http.get('https://41c0ede7-bac0-49e6-a786-ea1a8952d855.mock.pstmn.io/search/result')
       this.http.get('search/result')
       .pipe(
         tap(() => {
